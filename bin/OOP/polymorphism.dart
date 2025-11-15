@@ -1,0 +1,21 @@
+class Employee {
+  String? name;
+  Employee(this.name);
+}
+
+class Manager extends Employee {
+  Manager(String name) : super(name);
+}
+
+class VicePresident extends Manager {
+  VicePresident(String name) : super(name);
+}
+
+void main() {
+  Employee employee = Employee("Madani Hafizh");
+  print(employee);
+  employee = Manager("Mushlih Hafizh");
+  print(employee);
+  employee = VicePresident("Hafizh Madani");
+  print(employee);
+}
